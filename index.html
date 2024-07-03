@@ -10,9 +10,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/cabecalho.css">
     <link rel="stylesheet" href="styles/secao-informacoes-principais.css">
 </head>
 <body>
+    <header class="cabecalho">
+        <div class="cabecalho__container">
+            <div class="cabecalho__pesquisa">
+                <a href="index.html">
+                    <img src="/assets/logo-linkedin.svg" alt="Logotipo do LinkedIn" class="cabecalho__logo">
+                </a>
+                <form class="cabecalho__campo">
+                    <button type="submit" class="cabecalho__botao"><img src="/assets/icone-busca.svg" alt="Ícone de busca"></button>
+                    <input type="text" class="cabecalho__input" id="pesquisar" placeholder="Pesquisar">
+                </form>
+            </div>
+            <nav class="cabecalho__nav">
+                <ul class="cabecalho__nav-lista">
+                    <li>
+                        <a href="#">
+                            <img src="/assets/icone-inicio.svg" alt="Ícone de início">
+                            <span>Início</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/assets/icone-minha-rede.svg" alt="Ícone de minha rede">
+                            <span>Minha rede</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/assets/icone-vagas.svg" alt="Ícone de vagas">
+                            <span>Vagas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/assets/icone-mensagens.svg" alt="Ícone de mensagens">
+                            <span>Mensagens</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/assets/icone-notificacoes.svg" alt="Ícone de notificações">
+                            <span>Notificações</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/assets/icone-solucoes.svg" alt="Ícone de soluções">
+                            <span>Soluções</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
         <section class="informacoes-principais">
             <div class="informacoes-principais__container-banner">
