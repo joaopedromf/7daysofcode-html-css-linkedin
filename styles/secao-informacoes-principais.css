@@ -1,0 +1,146 @@
+.informacoes-principais{
+    background-color: var(--fundo-card);
+    max-width: 780px;
+    width: 780px;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.informacoes-principais__container-banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.informacoes-principais__banner{
+    width: 100%;
+    display: block;
+    max-height: 230px;
+}
+
+.informacoes-principais__container-info{
+    margin-top: 15%;
+}
+
+.informacoes-principais__foto{
+    position: relative;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    border: 4px solid var(--fundo-card);
+    margin-left: 8px;
+}
+
+.informacoes-principais__container-principal{
+    display: flex;
+}
+
+.informacoes-principais__container-sobre,
+.informacoes-principais__container-instituicoes{
+    flex-basis: 50%;
+    padding: 8px 1.3rem 1.5rem;
+}
+
+.informacoes-principais__container-sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.informacoes-principais__nome{
+    color: var(--texto-principal);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.informacoes-principais__ocupacao{
+    color: var(--texto-principal);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.informacoes-principais__descricao{
+    color: var(--texto-secundario);
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.informacoes-principais__container-contato{
+    font-size: 0.875rem;
+}
+
+.informacoes-principais__localidade{
+    color: var(--texto-secundario);
+    font-weight: 400;
+}
+
+.informacoes-principais__localidade::after{
+    content: "\00b7";
+    margin: 0 4px;
+    height: fit-content;
+}
+
+.informacoes-principais__contato{
+    color: var(--primario);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.informacoes-principais__container-seguidores{
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--primario);
+}
+
+.informacoes-principais__seguidores::after{
+    content: "\00b7";
+    margin: 0 4px;
+    color: var(--texto-secundario);
+}
+
+.informacoes-principais__botoes{
+    display: flex;
+    gap: 7px;
+}
+
+.informacoes-principais__container-instituicoes{
+    display: flex;
+    justify-content: center;
+}
+
+.informacoes-principais__instituicao{
+    margin-bottom: 8px;
+}
+
+.informacoes-principais__instituicao-imagem{
+    width: 32px;
+    height: 32px;
+}
+
+.informacoes-principais__instituicao-nome{
+    font-weight: 500;
+    color: var(--texto-principal);
+    vertical-align: super;
+    margin-left: 8px;
+}
+
+@media screen and (max-width: 760px){
+
+    .informacoes-principais__container-principal{
+        flex-direction: column;
+    }
+
+    .informacoes-principais__container-instituicoes{
+        justify-content: flex-start;
+    }
+
+    .informacoes-principais__botoes{
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .informacoes-principais__botoes button{
+        flex-basis: 50%;
+    }
+}

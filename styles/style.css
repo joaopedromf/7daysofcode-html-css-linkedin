@@ -1,0 +1,48 @@
+:root{
+    --fundo-escuro: #000;
+    --fundo-card: #1d2226;
+    --fundo-card-ativo: hsla(0, 0%, 100%, 0.12);
+    --texto-principal: hsla(0, 0%, 100%, 0.9);
+    --texto-secundario: hsla(0, 0%, 100%, 0.6);
+    --texto-escuro: hsla(0, 0%, 0%, 0.75);
+    --input: #38434F;
+    --primario: #70b5f9;
+    --positivo: #3ec786;
+}
+
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+main{
+    background-color: var(--fundo-escuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.botao{
+    min-width: 128px;
+    padding: 6px 29px;
+    background-color: var(--primario);
+    color: var(--texto-escuro);
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: 1px solid var(--primario);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.botao--vazado{
+    background-color: transparent;
+    color: var(--primario);
+}
+
+@media screen and (max-width: 760px){
+
+    .botao{
+        padding: 10px 29px;
+        font-size: 1rem;
+    }
+}
