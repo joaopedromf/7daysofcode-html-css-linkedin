@@ -47,6 +47,26 @@ main{
     margin-bottom: 1rem;
 }
 
+.interacoes{
+    padding: 10px 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reacoes{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.reacoes span,
+.comentarios{
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--texto-secundario);
+}
+
 .botao{
     min-width: 8rem;
     padding: 6px 29px;

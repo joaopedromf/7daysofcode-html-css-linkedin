@@ -36,26 +36,6 @@
     object-fit: cover;
 }
 
-.destaques__interacoes{
-    padding: 7px 14px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.destaques__reacoes{
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-.destaques__reacoes span,
-.destaques__comentarios{
-    font-size: 0.75rem;
-    font-weight: 400;
-    color: var(--texto-secundario);
-}
-
 @media screen and (max-width: 800px){
 
     .destaques__cards{
