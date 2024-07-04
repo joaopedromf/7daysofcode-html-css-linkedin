@@ -1,8 +1,7 @@
 .informacoes-principais{
     background-color: var(--fundo-card);
-    max-width: 780px;
-    width: 780px;
     border-radius: 1rem;
+    width: 100%;
     position: relative;
 }
 

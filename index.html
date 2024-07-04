@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/cabecalho.css">
     <link rel="stylesheet" href="styles/secao-informacoes-principais.css">
+    <link rel="stylesheet" href="styles/secao-destaques.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -67,46 +68,95 @@
             </nav>
         </div>
     </header>
-    <main>
-        <section class="informacoes-principais">
-            <div class="informacoes-principais__container-banner">
-                <img src="assets/image_de_capa.png" alt="Banner do perfil" class="informacoes-principais__banner">
-            </div>
-            <div class="informacoes-principais__container-info">
-                <img src="/assets/foto-perfil.png" alt="Foto de perfil" class="informacoes-principais__foto">
-                <div class="informacoes-principais__container-principal">
-                    <div class="informacoes-principais__container-sobre">
-                        <h1 class="informacoes-principais__nome">Nome Sobrenome</h1>
-                        <h2 class="informacoes-principais__ocupacao">Desenvolvedora | HTML | CSS | Typescript | Node</h2>
-                        <p class="informacoes-principais__descricao">Fala sobre #javascript, #frontend, #reactjs, e #backend</p>
-                        <div class="informacoes-principais__container-contato">
-                            <span class="informacoes-principais__localidade">Cidade, estado e país</span>
-                            <span class="informacoes-principais__contato">Informações de contato</span>
-                        </div>
-                        <div class="informacoes-principais__container-seguidores">
-                            <span class="informacoes-principais__seguidores">??? seguidores</span>
-                            <span class="informacoes-principais__conexoes">??? conexões</span>
-                        </div>
-                        <div class="informacoes-principais__botoes">
-                            <button class="botao" id="botao-mensagem">Mensagem</button>
-                            <button class="botao botao--vazado" id="botao-mais">Mais</button>
-                        </div>
-                    </div>
-                    <div class="informacoes-principais__container-instituicoes">
-                        <div class="informacoes-principais__instituicoes">
-                            <div class="informacoes-principais__instituicao">
-                                <img src="/assets/empresa.png" alt="" class="informacoes-principais__instituicao-imagem">
-                                <span class="informacoes-principais__instituicao-nome">Empresa</span>
+    <div class="conteudo">
+        <main>
+            <section class="informacoes-principais">
+                <div class="informacoes-principais__container-banner">
+                    <img src="assets/image_de_capa.png" alt="Banner do perfil" class="informacoes-principais__banner">
+                </div>
+                <div class="informacoes-principais__container-info">
+                    <img src="/assets/foto-perfil.png" alt="Foto de perfil" class="informacoes-principais__foto">
+                    <div class="informacoes-principais__container-principal">
+                        <div class="informacoes-principais__container-sobre">
+                            <h1 class="informacoes-principais__nome">Nome Sobrenome</h1>
+                            <h2 class="informacoes-principais__ocupacao">Desenvolvedora | HTML | CSS | Typescript | Node</h2>
+                            <p class="informacoes-principais__descricao">Fala sobre #javascript, #frontend, #reactjs, e #backend</p>
+                            <div class="informacoes-principais__container-contato">
+                                <span class="informacoes-principais__localidade">Cidade, estado e país</span>
+                                <span class="informacoes-principais__contato">Informações de contato</span>
                             </div>
-                            <div class="informacoes-principais__instituicao">
-                                <img src="/assets/instituicao-de-ensino.png" alt="" class="informacoes-principais__instituicao-imagem">
-                                <span class="informacoes-principais__instituicao-nome">Instituição de ensino</span>
+                            <div class="informacoes-principais__container-seguidores">
+                                <span class="informacoes-principais__seguidores">??? seguidores</span>
+                                <span class="informacoes-principais__conexoes">??? conexões</span>
+                            </div>
+                            <div class="informacoes-principais__botoes">
+                                <button class="botao" id="botao-mensagem">Mensagem</button>
+                                <button class="botao botao--vazado" id="botao-mais">Mais</button>
+                            </div>
+                        </div>
+                        <div class="informacoes-principais__container-instituicoes">
+                            <div class="informacoes-principais__instituicoes">
+                                <div class="informacoes-principais__instituicao">
+                                    <img src="/assets/empresa.png" alt="" class="informacoes-principais__instituicao-imagem">
+                                    <span class="informacoes-principais__instituicao-nome">Empresa</span>
+                                </div>
+                                <div class="informacoes-principais__instituicao">
+                                    <img src="/assets/instituicao-de-ensino.png" alt="" class="informacoes-principais__instituicao-imagem">
+                                    <span class="informacoes-principais__instituicao-nome">Instituição de ensino</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+            <section class="destaques card">
+                <h3 class="card-titulo">Destaques</h3>
+                <div class="destaques__cards">
+                    <article class="destaques__card">
+                        <div class="destaques__textos">
+                            <span class="destaques__titulo-card">Publicação</span>
+                            <span class="destaques__legenda">Legenda da primeira publicaçã...</span>
+                        </div>
+                        <img src="/assets/publicacao-1.jpg" alt="Primeira publicação" class="destaques__imagem">
+                        <div class="destaques__interacoes">
+                            <div class="destaques__reacoes">
+                                <img src="/assets/reacoes.png" alt="">
+                                <span>124</span>
+                            </div>
+                            <span class="destaques__comentarios">5 comentários</span>
+                        </div>
+                    </article>
+                    <article class="destaques__card">
+                        <div class="destaques__textos">
+                            <span class="destaques__titulo-card">Publicação</span>
+                            <span class="destaques__legenda">Legenda da segunda publicaçã...</span>
+                        </div>
+                        <img src="/assets/publicacao-2.jpg" alt="Segunda publicação" class="destaques__imagem">
+                        <div class="destaques__interacoes">
+                            <div class="destaques__reacoes">
+                                <img src="/assets/reacoes.png" alt="">
+                                <span>124</span>
+                            </div>
+                            <span class="destaques__comentarios">5 comentários</span>
+                        </div>
+                    </article>
+                    <article class="destaques__card">
+                        <div class="destaques__textos">
+                            <span class="destaques__titulo-card">Publicação</span>
+                            <span class="destaques__legenda">Legenda da terceira publicaçã...</span>
+                        </div>
+                        <img src="/assets/publicacao-3.jpg" alt="Terceira publicação" class="destaques__imagem">
+                        <div class="destaques__interacoes">
+                            <div class="destaques__reacoes">
+                                <img src="/assets/reacoes.png" alt="">
+                                <span>124</span>
+                            </div>
+                            <span class="destaques__comentarios">5 comentários</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
