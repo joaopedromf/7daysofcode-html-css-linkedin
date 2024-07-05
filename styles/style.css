@@ -40,6 +40,10 @@ main{
     box-sizing: border-box;
 }
 
+.card:last-child{
+    margin-bottom: 2rem;
+}
+
 .card-titulo{
     font-weight: 600;
     font-size: 1.25rem;
