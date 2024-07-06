@@ -10,11 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/cabecalho.css">
-    <link rel="stylesheet" href="styles/secao-informacoes-principais.css">
-    <link rel="stylesheet" href="styles/secao-destaques.css">
-    <link rel="stylesheet" href="styles/secao-atividades.css">
-    <link rel="stylesheet" href="styles/secao-experiencias.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -111,7 +106,7 @@
                     </div>
                 </div>
             </section>
-            <section class="destaques card">
+            <section class="card">
                 <h3 class="card-titulo">Destaques</h3>
                 <div class="destaques__cards">
                     <article class="destaques__card">
@@ -158,7 +153,7 @@
                     </article>
                 </div>
             </section>
-            <section class="atividades card">
+            <section class="card">
                 <h3 class="card-titulo">Atividades</h3>
                 <span class="atividades__seguidores">??? seguidores</span>
                 <div class="atividades__publicacoes">
@@ -209,14 +204,14 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
                 </p>
             </section>
-            <section class="experiencias card">
+            <section class="card">
                 <h3 class="card-titulo">Experiências</h3>
                 <div class="experiencias__empresa">
-                    <div class="experiencias__info-empresa">
-                        <img src="./assets/empresa.png" alt="" class="experiencias__imagem-empresa">
-                        <div class="experiencias__descricao-empresa">
-                            <span class="experiencias__nome-empresa">Empresa</span>
-                            <span class="experiencias__tempo-empresa">1 a 7 m</span>
+                    <div class="instituicao">
+                        <img src="./assets/empresa.png" alt="" class="imagem-instituicao-48">
+                        <div class="container-instituicao">
+                            <span class="titulo-item">Empresa</span>
+                            <span class="descritivo-item">1 a 7 m</span>
                         </div>
                     </div>
                     <ul class="experiencias__lista-cargos">
@@ -226,8 +221,8 @@
                                 <span></span>
                             </div>
                             <div class="experiencias__info">
-                                <h4 class="experiencias__posicao">Fullstack Developer</h4>
-                                <span class="experiencias__tipo-emprego">Tempo integral</span>
+                                <h4 class="titulo-item">Fullstack Developer</h4>
+                                <span class="subtitulo-item">Tempo integral</span>
                                 <div class="experiencias__duracao">
                                     <span>jan de 2022 - o momento</span>
                                     <span>5 meses</span>
@@ -241,8 +236,8 @@
                                 <span></span>
                             </div>
                             <div class="experiencias__info">
-                                <h4 class="experiencias__posicao">Fullstack Developer (JR)</h4>
-                                <span class="experiencias__tipo-emprego">Tempo integral</span>
+                                <h4 class="titulo-item">Fullstack Developer (JR)</h4>
+                                <span class="subtitulo-item">Tempo integral</span>
                                 <div class="experiencias__duracao">
                                     <span>jun de 2021 - jan de 2022</span>
                                     <span>8 meses</span>
@@ -256,8 +251,8 @@
                                 <span></span>
                             </div>
                             <div class="experiencias__info">
-                                <h4 class="experiencias__posicao">Front-end Developer</h4>
-                                <span class="experiencias__tipo-emprego">Tempo integral</span>
+                                <h4 class="titulo-item">Front-end Developer</h4>
+                                <span class="subtitulo-item">Tempo integral</span>
                                 <div class="experiencias__duracao">
                                     <span>jan de 2021 - jun de 2021</span>
                                     <span>6 meses</span>
@@ -267,6 +262,32 @@
                         </li>
                     </ul>
                 </div>
+            </section>
+            <section class="card">
+                <h3 class="card-titulo">Formação acadêmica</h3>
+                <ul>
+                    <li class="instituicao">
+                        <img src="./assets/instituicao-de-ensino.png" alt="" class="imagem-instituicao-48">
+                        <div class="container-instituicao">
+                            <span class="titulo-item">Instituição de ensino</span>
+                            <span class="subtitulo-item">Nome do curso</span>
+                            <span class="descritivo-item">2015 a 2019</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="card">
+                <h3 class="card-titulo">Idiomas</h3>
+                <ul>
+                    <li class="idiomas__item">
+                        <h4 class="titulo-item">Português</h4>
+                        <span class="descritivo-item">Fluente ou nativo</span>
+                    </li>
+                    <li class="idiomas__item">
+                        <h4 class="titulo-item">Inglês</h4>
+                        <span class="descritivo-item">Intermediário</span>
+                    </li>
+                </ul>
             </section>
         </main>
     </div>
