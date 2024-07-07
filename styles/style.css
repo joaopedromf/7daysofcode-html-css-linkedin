@@ -27,11 +27,25 @@ main{
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+}
+
+aside{
+    font-family: "Inter", sans-serif;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .conteudo{
     padding-top: 1.44rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
 .card{
@@ -87,7 +101,7 @@ main{
     gap: .7rem;
 }
 
-.imagem-instituicao-48{
+.imagem-48{
     width: 48px;
     height: 48px;
 }
@@ -133,6 +147,15 @@ main{
     color: var(--primario);
 }
 
+.botao--branco{
+    min-width: auto;
+    border: 1px solid var(--texto-principal);
+    color: var(--texto-principal);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    padding: 4px 1rem;
+}
+
 /* Cabeçalho */
 
 .cabecalho{
@@ -143,8 +166,8 @@ main{
 .cabecalho__container{
     max-width: 1132px;
     display: flex;
-    gap: 8rem;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
     margin: 0 auto;
 }
 
@@ -227,6 +250,7 @@ main{
     color: var(--texto-principal);
     font-size: 0.75rem;
     font-weight: 400;
+    text-wrap: nowrap;
 }
 
 /* Informações Principais */
@@ -527,7 +551,89 @@ main{
     padding-bottom: 1rem;
 }
 
+/* Sugestões de perfis */
+
+.card--sugestoes-perfil{
+    padding: 1rem;
+}
+
+.card-titulo--sugestoes-perfil{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--texto-principal);
+    margin-bottom: 1.2rem;
+}
+
+.sugestoes-perfil__item{
+    display: flex;
+    gap: 6px;
+}
+
+.sugestoes-perfil__item:not(:last-child){
+    margin-bottom: 1.5rem;
+}
+
+.sugestoes-perfil__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+}
+
+.sugestoes-perfil__nome{
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--texto-principal);
+}
+
+.sugestoes-perfil__descricao{
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--texto-secundario);
+}
+
 /* Media */
+
+@media screen and (max-width: 558px){
+
+    .cabecalho__nav-lista{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-bottom: 10px;
+        scrollbar-width: thin;
+        scrollbar-color: gray var(--fundo-card);
+    }
+
+    .cabecalho__nav-lista::-webkit-scrollbar {
+        width: 12px;
+    }
+  
+    .cabecalho__nav-lista::-webkit-scrollbar-track {
+        background: var(--fundo-card);
+    }
+    
+    .cabecalho__nav-lista::-webkit-scrollbar-thumb {
+        background-color: gray;
+        border-radius: 20px;
+        border: 6px solid var(--fundo-card);
+    }   
+}
+
+@media screen and (max-width: 700px){
+
+    .cabecalho__container{
+        flex-direction: column;
+        gap: 1.1rem;
+    }
+
+    .cabecalho__pesquisa{
+        justify-content: center;
+    }
+
+    .cabecalho__nav-lista{
+        justify-content: space-between;
+    }
+}
 
 @media screen and (max-width: 768px){
 
@@ -535,9 +641,9 @@ main{
         padding: 10px 29px;
         font-size: 1rem;
     }
-    
-    .cabecalho__container{
-        gap: 1rem;
+
+    .botao--branco{
+        padding: 5px 15px;
     }
 
     .informacoes-principais__container-principal{
@@ -560,6 +666,10 @@ main{
 
 @media screen and (max-width: 800px){
 
+    .cabecalho{
+        padding: 9px 1.5rem;
+    }
+
     .destaques__cards{
         flex-direction: column;
     }
@@ -569,13 +679,37 @@ main{
     }
 }
 
-@media screen and (max-width: 1024px){
-    
+@media screen and (max-width: 1200px){
+
+    aside{
+        max-width: 780px;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .conteudo{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .card:last-child{
+        margin-bottom: 1rem;
+    }
+
     .cabecalho__container{
-        justify-content: space-between;
+        max-width: 780px;
     }
 
     .cabecalho__campo{
         display: none;
+    }
+
+    .card--sugestoes-perfil{
+        padding: 1.5rem;
+    }
+
+    .card-titulo--sugestoes-perfil{
+        font-size: 1.25rem;
     }
 }
